@@ -1,0 +1,14 @@
+[project]
+name = "credkit"
+version = "0.1.0"
+description = "An open credit modeling tool kit"
+readme = "README.md"
+authors = [
+    { name = "jt-hill", email = "13084189+jt-hill@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.8.18,<0.9.0"]
+build-backend = "uv_build"
