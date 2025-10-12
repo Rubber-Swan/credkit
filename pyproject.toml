@@ -1,10 +1,11 @@
 [project]
 name = "credkit"
-version = "0.1.0"
+version = "0.2.0"
 description = "An open credit modeling tool kit"
 readme = "README.md"
+license = {text = "AGPL-3.0-only"}
 authors = [
-    { name = "jt-hill", email = "13084189+jt-hill@users.noreply.github.com" }
+  { name = "jt-hill", email = "13084189+jt-hill@users.noreply.github.com" },
 ]
 requires-python = ">=3.13"
 dependencies = []
@@ -12,3 +13,10 @@ dependencies = []
 [build-system]
 requires = ["uv_build>=0.8.18,<0.9.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest>=8.4.2"]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
